@@ -1,1 +1,1 @@
-# Water_tank_problem_vanilla_js
+# Water-tank-problem-vanilla-js
