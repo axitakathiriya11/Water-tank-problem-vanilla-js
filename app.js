@@ -88,12 +88,14 @@ function generateChartForBlocks(blocks) {
   drawChart(blocks, [], onlyWaterValue, "output-chart");
 }
 
+// for generating chart
 function drawChart(input, blockChartValue, waterChartValue, id) {
   var dom = document.getElementById(id);
   var myChart = echarts.init(dom, null, {
     renderer: "canvas",
     useDirtyRect: false,
   });
+
   var option;
   option = {
     xAxis: {
@@ -120,6 +122,6 @@ function drawChart(input, blockChartValue, waterChartValue, id) {
   if (option && typeof option === "object") {
     myChart.setOption(option);
   }
-  
+
   window.addEventListener("resize", myChart.resize);
 }
