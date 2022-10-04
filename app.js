@@ -116,8 +116,10 @@ function drawChart(input, blockChartValue, waterChartValue, id) {
       },
     ],
   };
+
   if (option && typeof option === "object") {
     myChart.setOption(option);
   }
+  
   window.addEventListener("resize", myChart.resize);
 }
